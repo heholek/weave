@@ -125,6 +125,8 @@ items:
                     fieldRef:
                       apiVersion: v1
                       fieldPath: spec.nodeName
+                - name: NO_MASQ_LOCAL
+                  value: "1"
               image: 'weaveworks/weave-kube:latest'
               imagePullPolicy: Always
               readinessProbe:
